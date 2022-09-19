@@ -10,7 +10,7 @@ this_directory = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
-dist.Distribution().fetch_build_eggs(["cython>=0.27", "numpy>=1.13"])
+dist.Distribution().fetch_build_eggs(["cython>=0.27", "numpy~=1.21.6"])
 
 
 try:
